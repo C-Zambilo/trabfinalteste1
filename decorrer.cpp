@@ -358,12 +358,12 @@ void cadastrar_notas (){
 					<< " SUB1: " << alunos[i].sub
 					<< " Media: " << alunos[i].media
 					<< " Status: " << alunos[i].status << std::endl;
-			std::cout << "Escolha uma das opções a seguir: " << std::endl
-		          << "1) Alterar a nota da AEP1" << std::endl
-		          << "2) Alterar a nota da prova1" << std::endl
-		          << "3) Alterar a nota da AEP2" << std::endl
-		          << "4) Alterar a nota da prova2" << std::endl
-		          << "5) Alterar a nota da substitutiva" << std::endl
+			std::cout << "Escolha uma das opções a seguir: \n";
+		          << "1) Alterar a nota da AEP1\n";
+		          << "2) Alterar a nota da prova1\n";
+		          << "3) Alterar a nota da AEP2\n";
+		          << "4) Alterar a nota da prova2\n";
+		          << "5) Alterar a nota da substitutiva\n";
 				  << "6) Para voltar" << std::endl;
 		          std::cin >> opcao_notas;
 	    	switch(opcao_notas){
@@ -378,7 +378,7 @@ void cadastrar_notas (){
 								<< " SUB1: " << alunos[i].sub
 								<< " Media: " << alunos[i].media
 								<< " Status: " << alunos[i].status << std::endl;
-					std::cout << "Digite a nota da AEP1: ";
+					std::cout << "Digite a nota da AEP1: \n";
 					std::cin >> alunos[i].aep1;
 			
 					if(alunos[i].sub != 0){
@@ -386,7 +386,7 @@ void cadastrar_notas (){
 						if((alunos[i].aep1 + alunos[i].prova1) > (alunos[i].aep2 + alunos[i].prova2)){
 							alunos[i].media = ((alunos[i].aep1 + alunos[i].prova1) + (alunos[i].sub)) / 2;
 						} else{
-							//se n for maior
+							
 							alunos[i].media = ((alunos[i].sub) + (alunos[i].aep2 + alunos[i].prova2)) / 2;
 						}
 					}
@@ -406,7 +406,7 @@ void cadastrar_notas (){
 								<< " SUB1: " << alunos[i].sub
 								<< " Media: " << alunos[i].media
 								<< " Status: " << alunos[i].status << std::endl;
-					std::cout << "Digite a nota da Prova1: ";
+					std::cout << "Digite a nota da Prova1: \n";
 				
 					std::cin >> alunos[i].prova1;
 				
@@ -435,7 +435,7 @@ void cadastrar_notas (){
 								<< " SUB1: " << alunos[i].sub
 								<< " Media: " << alunos[i].media
 								<< " Status: " << alunos[i].status << std::endl;
-					std::cout << "Digite a nota da AEP2: ";
+					std::cout << "Digite a nota da AEP2: \n";
 					std::cin >> alunos[i].aep2;
 				
 					if(alunos[i].sub != 0){
@@ -463,7 +463,7 @@ void cadastrar_notas (){
 								<< " SUB1: " << alunos[i].sub
 								<< " Media: " << alunos[i].media
 								<< " Status: " << alunos[i].status << std::endl;
-					std::cout << "Digite a nota da Prova2: ";
+					std::cout << "Digite a nota da Prova2: \n";
 					std::cin >> alunos[i].prova2;
 				
 					if(alunos[i].sub != 0){
@@ -491,7 +491,7 @@ void cadastrar_notas (){
 								<< " SUB1: " << alunos[i].sub
 								<< " Media: " << alunos[i].media
 								<< " Status: " << alunos[i].status << std::endl;
-					std::cout << "Digite a nota da Prova2: ";
+					std::cout << "Digite a nota da Prova2: \n";
 					std::cin >> alunos[i].sub;
 				
 					if(alunos[i].sub != 0){
