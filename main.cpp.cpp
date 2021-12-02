@@ -4,10 +4,14 @@
 int main() {
 	setlocale(LC_ALL, "portuguese");
 	int opcao = 0;
+	
+		std::cout << "=========================================\n";
+		std::cout << "          .Trabalho final C++. \n";
+		std::cout << "=========================================\n";
 	while (opcao != 4) {
 
 		std::cout << "Escolha uma das opções abaixo: \n";
-		Std::cout << "=========================================\n"
+		std::cout << "=========================================\n";
 		std::cout << "1) Para cadastrar novo aluno. \n"
 		std::cout << "2) Para cadastrar notas de um aluno.\n";
 		std::cout << "3) Para solicitar lista de alunos.\n";
