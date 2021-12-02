@@ -6,12 +6,12 @@ int main() {
 	int opcao = 0;
 	while (opcao != 4) {
 
-		std::cout << "Escolha uma das opções abaixo: \n" << std::endl;
+		std::cout << "Escolha uma das opções abaixo: \n";
 		Std::cout << "=========================================\n"
-		std::cout << "1) Para cadastrar novo aluno." << std::endl;
-		std::cout << "2) Para cadastrar notas de um aluno." << std::endl;
-		std::cout << "3) Para solicitar lista de alunos." << std::endl;
-		std::cout << "4) Para finalizar o programa." << std::endl;
+		std::cout << "1) Para cadastrar novo aluno. \n"
+		std::cout << "2) Para cadastrar notas de um aluno.\n";
+		std::cout << "3) Para solicitar lista de alunos.\n";
+		std::cout << "4) Para finalizar a aplicacao. \n";
 		std::cin >> opcao;
 
 		system("cls");
